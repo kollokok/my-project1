@@ -17,7 +17,7 @@ body {
     background-color: rgb(242, 242, 242);
 }
 .taxi-head {
-    margin: 0 auto;
+    margin-left: 10%;
     width: 20%;
 }
 .burger {
