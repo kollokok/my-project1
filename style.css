@@ -9,3 +9,33 @@ img {
 /* :root {
 
 }*/
+header {
+    background-color: white;
+    height: 10%;
+}
+body {
+    background-color: rgb(242, 242, 242);
+}
+.taxi-head {
+    margin: 0 auto;
+    width: 30%;
+}
+.burger {
+    width: 40px;
+    margin-left: 90%;
+}
+.titel-div {
+    text-align: center;
+    width: 70%;
+    margin: auto;
+}
+.title {
+    font-family: montstrrat, sans-serif;
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+.subtitle {
+    font-style: italic;
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+}
