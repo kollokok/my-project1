@@ -29,6 +29,7 @@ body {
     margin-left: 10%;
     width: 27%;
     padding-bottom: 15px;
+    max-widht: 200px;
 }
 .burger {
     width: 5%;
