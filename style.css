@@ -1,4 +1,9 @@
-* {
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&family=PT+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@700&display=swap');
+
+*,
+*::before,
+*::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -6,22 +11,26 @@
 img {
     display: block;
 }
-/* :root {
-
-}*/
+:root {
+    --accent-color: #ffffff;
+    scroll-behavior: smooth;
+}
+img {
+    display: block;
+}
 header {
-    background-color: white;
-    height: 10%;
+    background-color: var(--accent-color);
 }
 body {
-    background-color: rgb(242, 242, 242);
+    background-color: rgba(230, 230, 230, 0.678);
 }
 .taxi-head {
     margin-left: 10%;
-    width: 20%;
+    width: 27%;
+    padding-bottom: 15px;
 }
 .burger {
-    width: 40px;
+    width: 5%;
     margin-left: 90%;
 }
 .titel-div {
@@ -30,7 +39,7 @@ body {
     margin: auto;
 }
 .title {
-    font-family: montstrrat, sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-size: 48px;
     margin-bottom: 20px;
 }
@@ -38,4 +47,69 @@ body {
     font-style: italic;
     font-family: "Open Sans", sans-serif;
     font-size: 18px;
+}
+.block-img {
+    width: 50%;
+    margin: auto;
+    max-width: 100px;
+}
+.content {
+    background-color: var(--accent-color);
+    width: 28%;
+    padding: 30px;
+    min-width: 320px;
+    height: 400px;
+}
+.block {
+    display: flex;
+    justify-content: space-around;
+    margin: 5% 0 5% 0;
+}
+.block-title {
+    font-size: 24px;
+    text-align: center;
+    font-family: 'PT Sans', sans-serif;
+}
+.block-text {
+    font-size: 18px;
+    text-align: center;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 400;
+}
+.see-more a {
+    text-decoration: none;
+    color: black;
+}
+.see-more {
+    display: block;
+    margin: auto;
+    width: 180px;
+    text-align: center;
+    background-color: yellow;
+    padding: 15px 40px 15px 40px;
+    margin-bottom: 20px;
+}
+@media (min-width: 425px) {
+    .block {
+        display: grid;
+        place-items: center;
+        gap: 20px;
+    }
+}
+@media (min-width: 768px) {
+    .block {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (min-width: 1024px) {
+    .block {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+@media (max-width: 425px) {
+    .block {
+        display: grid;
+        place-items: center;
+        gap: 20px;
+    }
 }
