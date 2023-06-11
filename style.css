@@ -116,11 +116,11 @@ footer {
 }
 h1 {
     text-align: center;
-    padding: 7%;
+    padding-bottom: 25px;
 }
 .part {
     margin-bottom: 20px;
-    width: 330px;
+    width: 85%;
 }
 .block-footer {
     border-bottom: 1px solid var(--footer-text);
@@ -141,7 +141,7 @@ h1 {
         display: flex;
     }
     .part {
-        width: 330px;
+        width: 42.5%;
         margin-right: 40px;
     }
     .social-icons {
