@@ -13,8 +13,9 @@ img {
     display: block;
 }
 :root {
-    --second-color: green;
     --accent-color: #ffffff;
+    --footer-text: rgb(128, 128, 128);
+    --footer-background: #1A1A1A;
     scroll-behavior: smooth;
 }
 img {
@@ -93,13 +94,36 @@ body {
     margin-bottom: 20px;
 }
 footer {
-    background-color: var(--second-color);
+    background-color: var(--footer-background);
 }
 .social-icons {
     display: flex;
+    margin-top: 20px;
 }
 .social-icons img {
-    width: 30px;
+    width: 25px;
+}
+.social-icons a{
+    margin: 0 8px;
+}
+footer {
+    font-family: "Open Sans", sans-serif;
+    color: var(--accent-color);
+    padding: 30px;
+}
+.block-footer h5 {
+    color: var(--footer-text)
+}
+h1 {
+    text-align: center;
+    padding: 7%;
+}
+.part {
+    margin-bottom: 20px;
+    width: 330px;
+}
+.block-footer {
+    border-bottom: 1px solid var(--footer-text);
 }
 @media (min-width: 425px) {
     .block {
@@ -112,6 +136,16 @@ footer {
     .block {
         grid-template-columns: repeat(2, 1fr);
         margin: 5% 20% 5% 20%;
+    }
+    .block-footer {
+        display: flex;
+    }
+    .part {
+        width: 330px;
+        margin-right: 40px;
+    }
+    .social-icons {
+        justify-content: center;
     }
 }
 @media (min-width: 1024px) {
